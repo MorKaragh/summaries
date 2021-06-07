@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-07T16:53:44.391Z" agent="5.0 (X11)" etag="l9VaZswpWsIaS5k2C6Un" version="14.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-07T16:58:11.170Z" agent="5.0 (X11)" etag="_x0sxObSCXNUbfA62XCX" version="14.7.3" type="github">
   <diagram id="ImWpfMLSMGcMEEKTHTEJ" name="Page-1">
     <mxGraphModel dx="1990" dy="1153" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -57,11 +57,16 @@
         <mxCell id="E5qFBSlidN9A068RfuDA-19" value="&lt;div&gt;&lt;b&gt;Файловая&lt;/b&gt;&lt;/div&gt;&lt;div&gt;явно соответствует именам файлов. Для кода и т.п.&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="510" y="490" width="120" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="E5qFBSlidN9A068RfuDA-31" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="E5qFBSlidN9A068RfuDA-20" target="E5qFBSlidN9A068RfuDA-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="E5qFBSlidN9A068RfuDA-20" value="&lt;div&gt;&lt;b&gt;Анонимная&lt;/b&gt;&lt;/div&gt;&lt;div&gt;для переменных в стеке и т.п.&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="630" y="490" width="120" height="70" as="geometry" />
         </mxCell>
         <mxCell id="E5qFBSlidN9A068RfuDA-24" value="&lt;h1 style=&quot;font-size: 20px&quot;&gt;вытесняемая память&lt;br&gt;&lt;/h1&gt;&lt;p&gt;Приложение может потреблять больше памяти, чем есть даже физически. Тогда одна страница может вытяснять другую (pagefault)&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="55" y="440" width="290" height="100" as="geometry" />
+          <mxGeometry x="50" y="450" width="290" height="100" as="geometry" />
         </mxCell>
         <mxCell id="E5qFBSlidN9A068RfuDA-27" value="" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="230" y="35" width="70" height="40" as="geometry" />
@@ -71,6 +76,12 @@
         </mxCell>
         <mxCell id="E5qFBSlidN9A068RfuDA-28" value="страница обычно 4кб" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="210" y="55" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E5qFBSlidN9A068RfuDA-33" value="SWAP-файл" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=center;verticalAlign=middle;size=0.2;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="646.25" y="620" width="87.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="E5qFBSlidN9A068RfuDA-34" value="&lt;div&gt;Если вытясняется файловая память - то её можно считать обратно (имя файла-то есть). &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Если анонимная - её придется положить в swap-файл. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;SWAP как явление можно отключить на уровне ОС, но тогда утечки памяти приветдут к падению, что может быть и хорошо.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="545" width="270" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
